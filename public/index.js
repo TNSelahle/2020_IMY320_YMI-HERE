@@ -37,11 +37,5 @@ setTimeout(function(){anime.timeline({loop: 1})
         duration: 2000,
         easing: "easeOutExpo",
         delay: 1000
-    }).add({
-        targets: '.lines',
-        easing: "easeInOutExpo",
-        opacity: [0.3,1],
-        scaleX: [1,0],
-        duration: 100
     });},3500)
 
