@@ -1,4 +1,4 @@
-setTimeout(function(){anime.timeline({loop: 1})
+setTimeout(function(){anime.timeline({loop: true})
     .add({
         targets: '.lines',
         easing: "easeInOutExpo",
@@ -38,4 +38,3 @@ setTimeout(function(){anime.timeline({loop: 1})
         easing: "easeOutExpo",
         delay: 1000
     });},3500)
-
