@@ -1,3 +1,158 @@
 body{
-    background-color: goldenrod;
+    background-color: #ddbf5f;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    background-image: repeating-linear-gradient(25deg, #E0C56E 0%, #E0C56E 5%, #DFC369 7.5%, #DEC164 10%, #DDBF5F 12.5%, #DCBD5A 15%, #DBBB55 17.5%, #DAB950 20%, #DCBA4E 22.5%, #DDBB4B 25%,
+                                                        #DDBB4B 27.5%, #DCBA4E 30%, #DAB950 32.5%, #DBBB55 35%, #DDBF5F 37.5%, #DEC164 40%, #DFC369 42.5%, #E0C56E 45%, #E0C56E 47.5%);
+    font-size: 100%;
+}
+
+
+
+#panel{
+    position: relative;
+    width: 85%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2.5em;
+}
+
+#frontimg{
+    width: 100%;
+    height: auto;
+    border-radius: 1em;
+    animation: fadeINOpacity ease-in 3s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    filter: brightness(90%);
+    box-shadow: 0 0.5em 0.5em dimgrey;
+    z-index: 5;
+}
+
+#idxbtn{
+    opacity: 0;
+    animation: fadeINFull forwards 1s;
+    animation-delay: 3s;
+    animation-iteration-count: 1;
+    position: absolute;
+    top:85%;
+    left: 50%;
+    width: auto;
+    height: auto;
+    padding: 0.6em;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    color: #000000;
+    /*font-size: 0.5em;*/
+    border: none;
+    cursor: pointer;
+    border-radius: 0.5em;
+    background-image: repeating-linear-gradient(90deg, #E0C56E 0%, #E0C56E 10%, #DFC369 20%, #DEC164 30%, #DDBF5F 40%, #DCBD5A 50%, #DBBB55 60%, #DAB950 70%, #DCBA4E 80%, #DDBB4B 100%);
+    box-shadow: 0.2em 0 0.2em dimgrey inset, -0.2em 0 0.2em dimgrey inset;
+    z-index: 15;
+}
+
+#gldlines{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 10;
+    opacity: 0;
+    animation: fadeINFull forwards 1s;
+    animation-delay: 3s;
+    animation-iteration-count: 1;
+}
+
+@keyframes fadeINOpacity{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.8;
+    }
+}
+
+@keyframes fadeINFull{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.m1a{
+    position: relative;
+    font-weight: 300;
+    font-size: 2.5em;
+    color: #1F1F1F;
+    margin: 0 0.2em;
+}
+
+#wrap{
+    position: relative;
+    display: inline-block;
+}
+
+.lines{
+    position: absolute;
+    left: 0;
+    top:0;
+    bottom: 0;
+    height: 0.1em;
+    width: 100%;
+    margin: auto auto;
+    background-color: #1F1F1F;
+    transform-origin: center;
+    opacity: 0;
+    color: #1F1F1F;
+}
+
+#mid{
+    font-family: Baskerville, serif;
+    font-weight: 400;
+}
+
+.btnTxt{
+    display: inline-block;
+    opacity: 0;
+    font-style: italic;
+}
+
+@media screen and (min-width: 0px) {
+    body{font-size: 40%;}
+    .m1a{font-size: 0.4em;}
+    #frontimg{content: url("images/pexels-dương-nhân-1510150-long.jpg")}
+    #gldlines{content: url("images/lineslong.png")}
+}
+
+@media screen and (min-width: 300px) {
+    body{font-size: 50%;}
+    .m1a{font-size: 1em;}
+    #frontimg{content: url("images/pexels-dương-nhân-1510150-long.jpg")}
+    #gldlines{content: url("images/lineslong.png")}
+}
+
+@media screen and (min-width: 450px) {
+    body{font-size: 60%;}
+    .m1a{font-size: 1.5em;}
+    #frontimg{content: url("images/pexels-dương-nhân-edit2.jpg")}
+    #gldlines{content: url("images/linesv2.png")}
+}
+
+@media screen and (min-width: 700px) {
+    body{font-size: 70%;}
+    .m1a{font-size: 2em;}
+    #frontimg{content: url("images/pexels-dương-nhân-edit2.jpg")}
+    #gldlines{content: url("images/linesv2.png")}
+}
+@media screen and (min-width: 1000px) {
+    body{font-size: 100%;}
+    .m1a{font-size: 2.5em;}
+    #idxbtn{font-size: 100%;}
+    #frontimg{content: url("images/pexels-dương-nhân-edit2.jpg")}
+    #gldlines{content: url("images/linesv2.png")}
 }
