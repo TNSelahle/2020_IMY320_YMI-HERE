@@ -2,8 +2,9 @@ body{
     background-color: #ddbf5f;
     overflow-y: hidden;
     overflow-x: hidden;
-    background-image: repeating-linear-gradient(25deg, #E0C56E 0%, #E0C56E 5%, #DFC369 7.5%, #DEC164 10%, #DDBF5F 12.5%, #DCBD5A 15%, #DBBB55 17.5%, #DAB950 20%, #DCBA4E 22.5%, #DDBB4B 25%,
-                                                        #DDBB4B 27.5%, #DCBA4E 30%, #DAB950 32.5%, #DBBB55 35%, #DDBF5F 37.5%, #DEC164 40%, #DFC369 42.5%, #E0C56E 45%, #E0C56E 47.5%);
+    background-repeat: no-repeat;
+    background-image: repeating-linear-gradient(25deg, #E0C56E 0%, #E0C56E 2%, #DFC369 4%, #DEC164 6%, #DDBF5F 8%, #DCBD5A 10%, #DBBB55 12%, #DAB950 14%, #DCBA4E 16%, #DDBB4B 18%,
+                                                        #DDBB4B 20%, #DCBA4E 22%, #DAB950 24%, #DBBB55 26%, #DDBF5F 28%, #DEC164 30%, #DFC369 32%, #E0C56E 34%, #E0C56E 36%);
     font-size: 100%;
 }
 
@@ -61,8 +62,8 @@ body{
     height: auto;
     z-index: 10;
     opacity: 0;
-    animation: fadeINFull forwards 1s;
-    animation-delay: 3s;
+    animation: fadeINOpacity ease-in 3s;
+    animation-fill-mode: forwards;
     animation-iteration-count: 1;
 }
 
@@ -87,9 +88,10 @@ body{
 .m1a{
     position: relative;
     font-weight: 300;
-    font-size: 2.5em;
+    font-size: 2em;
     color: #1F1F1F;
     margin: 0 0.2em;
+    padding: 0.2em;
 }
 
 #wrap{
@@ -138,20 +140,20 @@ body{
 
 @media screen and (min-width: 450px) {
     body{font-size: 60%;}
-    .m1a{font-size: 1.5em;}
+    .m1a{font-size: 1.2em;}
     #frontimg{content: url("images/pexels-dương-nhân-edit2.jpg")}
     #gldlines{content: url("images/linesv2.png")}
 }
 
 @media screen and (min-width: 700px) {
     body{font-size: 70%;}
-    .m1a{font-size: 2em;}
+    .m1a{font-size: 1.5em;}
     #frontimg{content: url("images/pexels-dương-nhân-edit2.jpg")}
     #gldlines{content: url("images/linesv2.png")}
 }
 @media screen and (min-width: 1000px) {
     body{font-size: 100%;}
-    .m1a{font-size: 2.5em;}
+    .m1a{font-size: 2em;}
     #idxbtn{font-size: 100%;}
     #frontimg{content: url("images/pexels-dương-nhân-edit2.jpg")}
     #gldlines{content: url("images/linesv2.png")}
