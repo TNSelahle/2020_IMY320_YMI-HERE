@@ -8,15 +8,15 @@ body{
     font-size: 100%;
 }
 
-
-
 #panel{
     position: relative;
     width: 85%;
+    height: auto;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 2.5em;
+    margin-top: 2em;
+    align-self: center;
 }
 
 #frontimg{
@@ -27,7 +27,7 @@ body{
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
     filter: brightness(90%);
-    box-shadow: 0 0.5em 0.5em dimgrey;
+    box-shadow: 0 1em 1em dimgrey;
     z-index: 5;
 }
 
@@ -118,6 +118,16 @@ body{
     font-weight: 400;
 }
 
+#logo{
+    position: absolute;
+    height: auto;
+    width: 18%;
+    z-index: 50;
+    -webkit-filter: drop-shadow(1em 1em 1em grey);
+    top:2%;
+    left:2%;
+}
+
 .btnTxt{
     display: inline-block;
     opacity: 0;
@@ -127,7 +137,7 @@ body{
 @media screen and (min-width: 0px) {
     body{font-size: 40%;}
     .m1a{font-size: 0.4em;}
-    #frontimg{content: url("images/pexels-dương-nhân-1510150-long.jpg");}
+    #frontimg{content: url("images/indexlong.jpg");}
     #gldlines{content: url("images/gldlineslong.gif");
     top:0;}
 
@@ -136,15 +146,15 @@ body{
 @media screen and (min-width: 300px) {
     body{font-size: 50%;}
     .m1a{font-size: 1em;}
-    #frontimg{content: url("images/pexels-dương-nhân-1510150-long.jpg")}
+    #frontimg{content: url("images/indexlong.jpg")}
     #gldlines{content: url("images/gldlineslong.gif");
-    top:-2%;}
+    top:0;}
 }
 
 @media screen and (min-width: 450px) {
     body{font-size: 60%;}
     .m1a{font-size: 1.2em;}
-    #frontimg{content: url("images/pexels-dương-nhân-edit2.jpg")}
+    #frontimg{content: url("images/index.jpg")}
     #gldlines{content: url("images/gldlines.gif");
         top:-2%;}
 }
@@ -152,7 +162,7 @@ body{
 @media screen and (min-width: 700px) {
     body{font-size: 70%;}
     .m1a{font-size: 1.5em;}
-    #frontimg{content: url("images/pexels-dương-nhân-edit2.jpg")}
+    #frontimg{content: url("images/index.jpg")}
     #gldlines{content: url("images/gldlines.gif");
         top:-2%;}
 }
@@ -160,7 +170,7 @@ body{
     body{font-size: 100%;}
     .m1a{font-size: 2em;}
     #idxbtn{font-size: 100%;}
-    #frontimg{content: url("images/pexels-dương-nhân-edit2.jpg")}
+    #frontimg{content: url("images/index.jpg")}
     #gldlines{content: url("images/gldlines.gif");
         top:-2%;}
 }
