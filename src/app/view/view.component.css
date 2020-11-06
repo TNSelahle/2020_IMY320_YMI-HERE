@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  height: 100vh;
+  margin: 0 0 0 5rem;
+  display: grid;
+  place-items: center;
+  float: left;
+}
+
+.card {
+  display: flex;
+}
+
+.details {
+  padding: 1rem 3rem;
+}
+
+.image,
+.card {
+  border: none;
+  outline: none;
+}
+
+.circle,
+.triangle {
+  stroke: white;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: rgba(0, 0, 0, 0);
+  margin: auto;
+  padding: 20px;
+  width: fit-content;
+}
+
+.close {
+  color: #808080;
+  font-size: 50px;
+  position: absolute;
+  right: 32px;
+  top: 32px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.8;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.container {
+  width: 100%;
+  text-align: center;
+  /* margin-top: 25vh; */
+}
+.circle {
+  stroke: #A37E2B;
+  stroke-dasharray: 650;
+  stroke-dashoffset: 650;
+  -webkit-transition: all 0.5s ease-in-out;
+  opacity: 0.3;
+}
+.playBut {
+  display: inline-block;
+  -webkit-transition: all 0.5s ease;
+  margin-top: 2rem;
+}
+.playBut .triangle {
+  -webkit-transition: all 0.7s ease-in-out;
+  stroke-dasharray: 240;
+  stroke-dashoffset: 480;
+  stroke: white;
+  transform: translateY(0);
+}
+.playBut:hover .triangle {
+  stroke-dashoffset: 0;
+  opacity: 1;
+  stroke: #A37E2B;
+  animation: nudge 0.7s ease-in-out;
+}
+@keyframes nudge {
+  0% {
+    transform: translateX(0);
+  }
+  30% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  70% {
+    transform: translateX(-2px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.playBut:hover .circle {
+  stroke-dashoffset: 0;
+  opacity: 1;
+}
+
+.video-player-wrapper {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  margin: 5rem;
+  border: 2px solid #A37E2B;
+}

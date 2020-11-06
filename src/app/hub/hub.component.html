@@ -1,0 +1,12 @@
+<div class="main" role="main">
+  <div class="container">
+    <div style="display: flex" class="cards">
+      <div class="card" *ngFor="let content of contentArray"
+            [routerLink]="['/View']"
+            [state]="content"
+      >
+        <img [src]="content.url" alt="image" height="350px" class="image">
+      </div>
+    </div>
+  </div>
+</div>
