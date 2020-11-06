@@ -1,37 +1,14 @@
-<div class="video-player-wrapper" style="height: 80vh; ">
-
-  <h2>Angular Video Player with Controls Example</h2>
-
-  <vg-player>
-    <vg-overlay-play></vg-overlay-play>
-    <vg-buffering></vg-buffering>
-
-    <vg-scrub-bar>
-      <vg-scrub-bar-current-time></vg-scrub-bar-current-time>
-      <vg-scrub-bar-buffering-time></vg-scrub-bar-buffering-time>
-    </vg-scrub-bar>
-
-    <vg-controls>
-      <vg-play-pause></vg-play-pause>
-      <vg-playback-button></vg-playback-button>
-
-      <vg-time-display vgProperty="current" vgFormat="mm:ss"></vg-time-display>
-
-      <vg-scrub-bar style="pointer-events: none;"></vg-scrub-bar>
-
-      <vg-time-display vgProperty="left" vgFormat="mm:ss"></vg-time-display>
-      <vg-time-display vgProperty="total" vgFormat="mm:ss"></vg-time-display>
-
-      <vg-track-selector></vg-track-selector>
-      <vg-mute></vg-mute>
-      <vg-volume></vg-volume>
-
-      <vg-fullscreen></vg-fullscreen>
-    </vg-controls>
-
-    <video [vgMedia]="media" #media id="singleVideo" preload="auto" crossorigin>
-      <source src="https://www.youtube.com/embed/DSPbLJd1YmI" type="video/mp4">
-    </video>
-  </vg-player>
-
+<div class="container">
+  <div class="title">
+    <h1>About Us</h1>
+  </div>
+  <p>u15210822@tuks.co.za</p>
+  <div class="info">
+    <ul>
+      <li>Content that brings the most important aspects of a businesses together.</li>
+      <li>Focused on you business needs and what your clients wants.</li>
+      <li>We bring you the perfect solution to getting what you want and providing your clients with the content that will make them stick.</li>
+      <li>Our diverse team comes together to captivate our clients. Each member shares the same drive and passion for the industry that shows in every design.</li>
+    </ul>
+  </div>
 </div>

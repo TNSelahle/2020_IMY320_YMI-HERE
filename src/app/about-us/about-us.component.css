@@ -1,0 +1,17 @@
+.container {
+  height: 100vh;
+  margin: 0;
+  display: grid;
+  place-items: center;
+}
+
+* {
+  box-sizing: border-box;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.info {
+  
+}
